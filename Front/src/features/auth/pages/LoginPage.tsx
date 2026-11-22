@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import IconoOjo from '../../../shared/components/IconoOjo'
 import './LoginPage.css'
 
 export default function LoginPage() {
@@ -43,10 +45,13 @@ export default function LoginPage() {
             type="button"
             className="login__ojo"
             onClick={() => setVerContrasena(!verContrasena)}
+            aria-label={verContrasena ? 'Ocultar contraseña' : 'Mostrar contraseña'}
           >
-            {verContrasena ? 'Ocultar' : 'Ver'}
+            <IconoOjo tachado={verContrasena} />
           </button>
         </div>
+
+        <NavLink to="/recuperar" className="login__olvide">¿Olvidaste tu contraseña?</NavLink>
 
         <button type="submit" className="login__boton">Iniciar Sesión</button>
       </form>

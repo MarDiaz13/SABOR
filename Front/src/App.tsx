@@ -1,5 +1,5 @@
-import LoginPage from './features/auth/pages/LoginPage'
+import AppRouter from './router/AppRouter'
 
 export default function App() {
-  return <LoginPage />
+  return <AppRouter />
 }

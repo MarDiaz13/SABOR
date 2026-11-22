@@ -24,20 +24,31 @@
   background: #ffffff08; border: 1px solid #ffffff1a; border-radius: 20px;
   display: flex; flex-direction: column; gap: 10px;
 }
-.login__tarjeta h2 { font-size: 20px; }
-.login__meta { letter-spacing: 0; margin-bottom: 20px; }
+.login__tarjeta h2 { font-size: 20px; text-align: center; }
+.login__meta { letter-spacing: 0; margin-bottom: 20px; text-align: center; }
 .login__campo {
   width: 100%; padding: 16px; border-radius: 12px; margin-bottom: 16px;
   background: #ffffff0d; border: 1px solid #ffffff1a; color: #F8F8F8; font-size: 16px;
 }
 .login__clave { position: relative; }
 .login__ojo {
-  position: absolute; right: 12px; top: 14px;
-  background: none; border: none; color: #F8F8F8; cursor: pointer;
+  position: absolute; right: 4px; top: 0;
+  height: calc(100% - 16px); width: 48px;
+  display: grid; place-items: center;
+  background: none; border: none; color: #ffffff80; cursor: pointer;
 }
+.login__ojo:hover { color: #F8F8F8; }
 .login__boton {
   padding: 18px; border: none; border-radius: 14px;
   background: #910606; color: #F8F8F8; font-size: 17px; font-weight: 700;
   cursor: pointer; box-shadow: 0 0 30px #91060655;
 }
 .login__pie { margin-top: 48px; }
+.login__olvide {
+  align-self: center;
+  margin: -6px 0 12px;
+  font-size: 14px;
+  color: #ffffff99;
+  text-decoration: none;
+}
+.login__olvide:hover { color: #F8F8F8; text-decoration: underline; }

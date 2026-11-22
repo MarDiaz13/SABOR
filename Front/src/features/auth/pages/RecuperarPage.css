@@ -1,0 +1,63 @@
+
+.recuperar__aviso {
+  font-size: 14px;
+  color: #F8F8F8cc;
+  background: #91060626;
+  border: 1px solid #91060666;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.recuperar__error {
+  font-size: 14px;
+  color: #ff8a8a;
+  margin-bottom: 8px;
+}
+
+.recuperar__codigo {
+  font-size: 22px;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.recuperar__enlace {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #ffffff99;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recuperar__enlace:hover {
+  color: #F8F8F8;
+}
+
+.recuperar__palomita {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #16a34a33;
+  color: #4ade80;
+  font-size: 28px;
+}
+
+.login__tarjeta:has(.recuperar__palomita) {
+  text-align: center;
+}
+
+.recuperar__boton-enlace {
+  text-align: center;
+  text-decoration: none;
+}
+
+.login__boton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}

@@ -10,3 +10,23 @@ export interface LoginResponse {
   nombre: string
   rol: Rol
 }
+
+// ---------- Recuperar contraseña ----------
+
+export interface SolicitarCodigoRequest {
+  correo: string
+}
+
+export interface SolicitarCodigoResponse {
+  mensaje: string
+}
+
+export interface RestablecerContrasenaRequest {
+  correo: string
+  codigo: string
+  nuevaContrasena: string
+}
+
+export interface RestablecerContrasenaResponse {
+  mensaje: string
+}
